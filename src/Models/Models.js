@@ -34,7 +34,7 @@ let bookSchema = new mongoose.Schema({
 
 // borrow scheme
 let borrowSchema =new mongoose.Schema({
-    lendby:String,
+    borrower:String,
     bookid:String,
     returned:{
         type:Boolean,
@@ -61,7 +61,7 @@ let borrow=new mongoose.model("borrow", borrowSchema);
 
 // exports
 module.exports ={
-    uer,
+    user,
     book,
     borrow
 }
